@@ -1,0 +1,56 @@
+.main-body{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+.main-body .dropdown-toggle::after{
+  display: none;
+}
+/* CHATS LIST */
+.chats__item.active .text-primary{
+  color: white !important;
+}
+.chats__item.active .bg-primary{
+  background-color: white !important;
+  color: var(--bs-primary);
+}
+.chats__item.active svg{
+  fill: white;
+}
+/* CHAT TAB */
+
+.chat-hidden-button{
+display: inline-block;
+width: 0;
+height: 0;
+padding: 0;
+margin: -1px;
+border: 0;
+overflow: hidden;
+clip: rect(0 0 0 0);
+}
+/* MODAL */
+.lock-modal__modal-dialog{
+  max-width: 100%;
+  margin: 0;
+}
+.lock-modal__password{
+  border-bottom: 2px solid var(--bs-primary);
+}
+
+/* OFFCANVAS */
+
+.sidebar-offcanvas{
+width: 276px;
+}
+.sidebar-offcanvas-user-toggler-icon{
+  transition: transform 0.3s ease ;
+}
+.sidebar-offcanvas-user-toggler-icon--open{
+  transform: rotate(180Deg);
+}
+.actions-list__item .stretched-link{
+  cursor: pointer;
+}
